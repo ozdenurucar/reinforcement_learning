@@ -1,6 +1,6 @@
 # ROS ve Gazebo ile Pekiştirmeli Öğrenme
 
-https://github.com/ozdenurucar/reinforcement_learning/blob/master/Resimler/rl.png
+![](https://github.com/ozdenurucar/reinforcement_learning/blob/master/Resimler/rl.png)
 
 
 
