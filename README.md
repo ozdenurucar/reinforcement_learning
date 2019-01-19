@@ -12,10 +12,14 @@ Daha önce de tartışıldığı gibi, robotikteki RL ile ilgili temel problem, 
 
 Projede alogirtmalar Ubuntu 18.04 üzerinde ROS Melodic versiyonu ile test edilmiştir.
 
-Ubuntu 18.04 için:
+### Ubuntu 18.04
 
-```bash
+#### Temel Gereklilikler
+- ROS Melodic: Desktop-Full kurulması önerilir, Gazebo 9.0.0 içerir (http://wiki.ros.org/melodic/Installation/Ubuntu).
 
+
+#### ROS Melodic bağımlı paketleri
+```
 sudo apt-get install \
 python-pip python3-vcstool python3-pyqt4 \
 pyqt5-dev-tools \
@@ -42,5 +46,39 @@ ros-melodic-tf2-sensor-msgs     \
 ros-melodic-pcl-ros \
 ros-melodic-navigation \
 ros-melodic-sophus
+```
 
+#### Gerekli Python Paketleri:
+```
+sudo pip install gym
+sudo apt-get install python-skimage
+sudo pip install h5py
+pip install tensorflow-gpu (if you have a gpu if not then just pip install tensorflow)
+sudo pip install keras
+```
+
+#### gym-gazebo
+```
+cd ~
+git clone https://github.com/erlerobot/gym-gazebo
+cd gym-gazebo
+sudo pip install -e .
+```
+
+#### workspace:
+```
+cd gym-gazebo/gym_gazebo/envs/installation
+bash setup_melodic.bash
+```
+
+##### Örnek olarak qleanning uygulamasının çalıştırılması
+terminal 1
+```
+cd gym-gazebo/gym_gazebo/envs/installation/
+bash turtlebot_setup.bash
+```
+terminal 2
+```
+cd gym-gazebo/examples/turtlebot
+python circuit_turtlebot_lidar_qlearn.py
 ```
