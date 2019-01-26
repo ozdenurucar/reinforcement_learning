@@ -82,3 +82,6 @@ terminal 2
 cd gym-gazebo/examples/turtlebot
 python circuit_turtlebot_lidar_qlearn.py
 ```
+
+https://www.youtube.com/watch?v=Vgzv-4eNeH0
+
