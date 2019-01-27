@@ -7,7 +7,6 @@ https://www.youtube.com/watch?v=Vgzv-4eNeH0
 
 https://www.youtube.com/watch?v=WADmP0wzLxs
 
-
 https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842
 
 
