@@ -1,5 +1,4 @@
 import random
-
 import numpy as np
 from keras import Sequential, optimizers
 from keras.layers import Dense, Activation, LeakyReLU, Dropout
